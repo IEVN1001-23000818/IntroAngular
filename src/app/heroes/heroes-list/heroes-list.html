@@ -31,7 +31,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let heroe of heroes"><!--*ngFor funciona para recorrer toda una lista sin 
+                        <tr *ngFor="let heroe of heroes | heroesFilter:listFilter"><!--*ngFor funciona para recorrer toda una lista sin 
                             necesidad de mandar a llamar a cada un elemento-->
                             <td><img  *ngIf="muestraImage" [src]="heroe.imagen"
                                 [style.width.px]="imageWidth"

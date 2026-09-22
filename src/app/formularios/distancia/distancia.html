@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+
+        <form>
+
+            <div class="form-group pt-4">
+                <label for="num1">Ingrese X1:</label>
+                <input [(ngModel)]="num1" name="num1" type="text"class="form-control" id="num1" placeholder="Ingrese número">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="num2">Ingrese Y1:</label>
+                <input [(ngModel)]="num2" name="num2" type="text" class="form-control" id="num2" placeholder="Ingrese número">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="num3">Ingrese X2:</label>
+                <input [(ngModel)]="num3" name="num3" type="text" class="form-control" id="num3" placeholder="Ingrese número">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="num4">Ingrese Y2:</label>
+                <input [(ngModel)]="num4" name="num4" type="text" class="form-control" id="num4" placeholder="Ingrese número">
+            </div>
+
+            <br>
+
+            <button (click)="operacion()" type="button" class="btn btn-primary">
+                Calcular
+            </button>
+
+            <div class="col-6">
+                <h2>Resultado: {{resultado}}</h2>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
