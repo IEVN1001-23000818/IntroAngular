@@ -7,9 +7,21 @@ import { HeroesList } from './heroes/heroes-list/heroes-list';
 import { HeroesFilterPipe } from './heroes/heroes-filter-pipe';
 import { OperasBas } from './formularios/operas-bas/operas-bas';
 import { Distancia } from './formularios/distancia/distancia';
+import { Areas } from './formularios/areas/areas';
+import { Usuarios } from './formularios/usuarios/usuarios';
+import { Palindromo } from './formularios/palindromo/palindromo';
 
 @NgModule({
-  declarations: [App, HeroesList, HeroesFilterPipe, OperasBas, Distancia],
+  declarations: [
+    App,
+    HeroesList,
+    HeroesFilterPipe,
+    OperasBas,
+    Distancia,
+    Areas,
+    Usuarios,
+    Palindromo,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
